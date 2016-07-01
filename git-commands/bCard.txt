@@ -1,0 +1,203 @@
+mahdi@mini MINGW64 ~/a100-dev
+$ git clone https://github.com/msaei/bCard.git
+Cloning into 'bCard'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+
+mahdi@mini MINGW64 ~/a100-dev
+$ ls
+bCard/  git-foundation/  my-python-course/  my-web-design-course/
+
+mahdi@mini MINGW64 ~/a100-dev
+$ cd bcard
+
+mahdi@mini MINGW64 ~/a100-dev/bcard (master)
+$ ls
+
+mahdi@mini MINGW64 ~/a100-dev/bcard (master)
+$ ls -a
+./  ../  .git/
+
+mahdi@mini MINGW64 ~/a100-dev/bcard (master)
+$ cd ..
+
+mahdi@mini MINGW64 ~/a100-dev
+$ git clone https://github.com/Apprentice100/bCard.git
+fatal: destination path 'bCard' already exists and is not an empty directory.
+
+mahdi@mini MINGW64 ~/a100-dev
+$ rm -r bCard/
+
+mahdi@mini MINGW64 ~/a100-dev
+$ git clone https://github.com/Apprentice100/bCard.git
+Cloning into 'bCard'...
+remote: Counting objects: 7, done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 7
+Unpacking objects: 100% (7/7), done.
+Checking connectivity... done.
+
+mahdi@mini MINGW64 ~/a100-dev
+$ cd bCard
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git remote set-url origin https://github.com/msaei/bCard.git
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ ls
+index.html  public/
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git push origin master
+Counting objects: 7, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 3.08 KiB | 0 bytes/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/msaei/bCard.git
+ * [new branch]      master -> master
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ ls
+index.html  public/
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ ls
+index.html  public/
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ cd public
+
+mahdi@mini MINGW64 ~/a100-dev/bCard/public (master)
+$ ls
+css/
+
+mahdi@mini MINGW64 ~/a100-dev/bCard/public (master)
+$ cd css
+
+mahdi@mini MINGW64 ~/a100-dev/bCard/public/css (master)
+$ ls
+base.css  normalize.css
+
+mahdi@mini MINGW64 ~/a100-dev/bCard/public/css (master)
+$ cd ..
+
+mahdi@mini MINGW64 ~/a100-dev/bCard/public (master)
+$ cd ..
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git pull
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 1), reused 6 (delta 1), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/msaei/bCard
+   f4b6451..2778209  master     -> origin/master
+Updating f4b6451..2778209
+Fast-forward
+ index.html          | 3 ++-
+ public/css/base.css | 6 ++++++
+ 2 files changed, 8 insertions(+), 1 deletion(-)
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git add .
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+        modified:   public/css/base.css
+
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git commit -m "div bCard added"
+[master 4764e48] div bCard added
+ 2 files changed, 11 insertions(+)
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git push
+Counting objects: 6, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 645 bytes | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+To https://github.com/msaei/bCard.git
+   2778209..4764e48  master -> master
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git pull
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 1), reused 6 (delta 1), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/msaei/bCard
+   4764e48..41767b7  master     -> origin/master
+Updating 4764e48..41767b7
+Fast-forward
+ index.html          |  7 ++++---
+ public/css/base.css | 15 +++++++++------
+ 2 files changed, 13 insertions(+), 9 deletions(-)
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git pull
+Already up-to-date.
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git add .
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+        modified:   public/css/base.css
+
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git commit -m "image added"
+[master cb4f630] image added
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git push
+Counting objects: 6, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 629 bytes | 0 bytes/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+To https://github.com/msaei/bCard.git
+   41767b7..cb4f630  master -> master
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git pull
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 2), reused 6 (delta 2), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/msaei/bCard
+   cb4f630..bf6bb97  master     -> origin/master
+Updating cb4f630..bf6bb97
+error: Your local changes to the following files would be overwritten by merge:
+        index.html
+Please commit your changes or stash them before you can merge.
+Aborting
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$ git pull
+Updating cb4f630..bf6bb97
+Fast-forward
+ index.html          |  4 ++++
+ public/css/base.css | 11 ++++++++++-
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+
+mahdi@mini MINGW64 ~/a100-dev/bCard (master)
+$

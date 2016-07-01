@@ -1,0 +1,6 @@
+- awsome icon font
+- huraky
+- text editor
+- practice on your html and css with git
+- do assignment
+- cdn ?
